@@ -22,6 +22,7 @@ base_url = 'http://demoqa.com/checkbox'
 driver.get(base_url)
 driver.maximize_window()
 
+#создаем переменную для чек-бокса, нажимаем его и проверяем нажатие
 check_box = driver.find_element(By.XPATH, "//span[@class='rct-checkbox']")
 check_box.click()
 check_box.is_selected()
